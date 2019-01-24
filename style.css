@@ -158,6 +158,55 @@ header
 	text-align: center;
 }
 
+@media screen and (max-width:959px) {
+	header
+	{
+		height: 100vh;
+		width: 80vh;
+		background-size: 150vh;
+	}
+	
+  	.textinfo
+        {
+		color: black;
+		font-family: "Roboto", sans-serif;
+		height: 100vh;
+		width: 80vh;
+		text-position: center;
+		text-decoration: none;
+		text-align: center;
+         }
+ 
+ .hero
+{
+    position: absolute;
+	height: 100vh;
+    width: 80vh;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+
+.button
+{
+	margin-left: 130px;
+	margin-right: 0px;
+}
+
+.btn
+{
+	
+	heigth: 100vh;
+	width: 80vh;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+}
 
 
 
