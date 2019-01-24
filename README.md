@@ -1,0 +1,1 @@
+# szoppracz07PL.github.io
