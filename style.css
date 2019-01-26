@@ -1,4 +1,51 @@
 *
+.text
+{
+	width: 375px;
+	height: 50px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition:.5s;
+}
+.text:focus
+{
+	border-color:dodgerBlue;
+	border-shadow:0 0 8px dodgerBlue;
+}
+
+.text:hover
+{
+	border-color: dodgerBlue;
+}
+
+.textm
+{
+	width: 400px;
+	height: 225px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition:.5s;
+}
+
+.textm:focus
+{
+	border-color:dodgerBlue;
+	border-shadow:0 0 8px dodgerBlue;
+}
+
+.textm:hover
+{
+	border-color: dodgerBlue;
+}
+
 {
     margin: 0;
     padding: 0;
