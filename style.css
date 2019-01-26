@@ -4,6 +4,27 @@
     padding: 0;
 }
 
+.blog
+{
+	color: white;
+	font-family: "Roboto", sans-serif;
+	text-position: center;
+	text-decoration: none;
+	text-align: justify;
+	padding: 30px;
+}
+
+.blogtext
+{
+	background-color: #e7e7e7;
+	color: #161616;
+	font-family: "Roboto", sans-serif;
+	text-position: center;
+	text-decoration: none;
+	text-align: justify;
+	padding: 30px;
+}
+
 .text
 {
 	width: 375px;
