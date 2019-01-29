@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.fb
+{
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+}
+
 .blog
 {
 	color: white;
