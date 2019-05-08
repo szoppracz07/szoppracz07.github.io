@@ -100,7 +100,7 @@ body
     float: right;
 }
 
-.twojemenu ul {
+ul {
   font-family: "Roboto", sans-serif;
   list-style-type: none;
   margin: 0;
@@ -109,12 +109,12 @@ body
   background-color: #333;
 }
 
-.twojemenu li {
+li {
   font-family: "Roboto", sans-serif;
   float: right;
 }
 
-.twojemenu li a {
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -123,7 +123,7 @@ body
 }
 
 /* Change the link color to #111 (black) on hover */
-.twojemenu li a:hover {
+li a:hover {
   background-color: #111;
 }
 
