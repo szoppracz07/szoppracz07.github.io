@@ -100,7 +100,7 @@ body
     float: right;
 }
 
-ul {
+.ul1 {
   font-family: "Roboto", sans-serif;
   list-style-type: none;
   margin: 0;
@@ -109,12 +109,12 @@ ul {
   background-color: #333;
 }
 
-li {
+.li2 {
   font-family: "Roboto", sans-serif;
   float: right;
 }
 
-li a {
+.li2 a {
   display: block;
   color: white;
   text-align: center;
@@ -123,7 +123,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.li2 a:hover {
   background-color: #111;
 }
 
