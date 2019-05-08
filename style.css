@@ -103,7 +103,7 @@ body
 .main-nav
 {
     float: right;
-    margin-top: 30px;
+    list-style: none;
 }
 .main-nav li
 {
