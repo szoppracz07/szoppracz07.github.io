@@ -133,6 +133,7 @@ body
 }
 
 ul {
+  font-family: "Roboto", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -141,6 +142,7 @@ ul {
 }
 
 li {
+  font-family: "Roboto", sans-serif;
   float: right;
 }
 
