@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Pen</title>
+	<script>
+		function refresh() {
+			var textContent = document.getElementById('editor-textarea').value;
+			document.getElementById('viewer').srcdoc= textContent;
+			}
+	</script>
+	<link href="editor.css" rel="stylesheet" type="text/css">
+</head> 
+<body>
+
+	    	<ul class="ul1">
+			<img class="h2" src="favicon.png" width="25" height="25">
+	  <h3 class="h2">Html Plan</h3>
+	</ul>
+
+
+	<div class="main">
+		<h1>HTML</h1>
+		<textarea id="editor-textarea" onkeyup="refresh()"></textarea>
+		<iframe id="viewer"></iframe>
+	</div>
+</body>    
+</html>
