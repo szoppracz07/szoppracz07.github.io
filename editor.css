@@ -32,17 +32,20 @@
 		outline: none;
 		color: white;
 		box-sizing: border-box;
+		transition:.5s;
 	}
 	
 	#editor-textarea:focus
 	{
 		border-color: black;
 		border-shadow:0 0 20px black;
+		transition:.5s;
 	}
 	
 	#editor-textarea:hover
 	{
 		border-color:black;
+		transition:.5s;
 	}
 	
 	#viewer
