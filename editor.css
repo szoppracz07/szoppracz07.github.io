@@ -28,8 +28,23 @@
 		margin-right: auto;
 		margin-left: auto;
 		border: 2px solid #212121;
+		border-radius: 4px;
+		outline: none;
 		color: white;
+		box-sizing: border-box;
 	}
+	
+	#editor-textarea:focus
+	{
+		border-color: black;
+		border-shadow:0 0 20px black;
+	}
+	
+	#editor-textarea:hover
+	{
+		border-color:black;
+	}
+	
 	#viewer
 	{
 		background: white;
@@ -40,6 +55,7 @@
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
+		box-shadow: 0px 0px 20px;
 	}
 	
 .ul1 
