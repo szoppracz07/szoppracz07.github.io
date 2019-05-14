@@ -17,6 +17,18 @@
 		text-align: center;
 		font-family: 'Cabin Condensed', sans-serif;
 	}
+	h2
+	{
+		color: white;
+		text-align: center;
+		font-family: 'Cabin Condensed', sans-serif;
+	}
+	h3
+	{
+		color: white;
+		text-align: center;
+		font-family: 'Cabin Condensed', sans-serif;
+	}
 	#editor-textarea
 	{
 		background: #161616;
