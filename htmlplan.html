@@ -13,10 +13,25 @@
 			document.getElementById('viewer').srcdoc= textContent;
 			}
 	</script>
+	<script>
+		function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You visited us " + localStorage.clickcount + " times.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+	</script>
 	<link href="editor.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cdaec3665edff05"></script>
 </head> 
 <body>
+	<body onload="clickCounter()">
 
 	    	<ul class="ul1">
 			<img class="h2" src="favicon.png" width="25" height="25">
@@ -31,6 +46,6 @@
 	</div><br/><br/><br/><br/><br/><br/>
 	<h1>HTML PLAN</h1>
 	<h1>Html Plan is a website created by szoppracz07. To create this site, the creator was inspired by codepen (I highly recommend).</h1>
-	<h1> The site is just starting, and the creator is just learning html, css and js</h1><br/><br/><br/>
+	<h1> The site is just starting, and the creator is just learning html, css and js</h1><br/><br/><br/><div class="h1" id="result"></div>
 </body>    
 </html>
