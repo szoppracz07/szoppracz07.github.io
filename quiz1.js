@@ -53,7 +53,7 @@
         chooseOption();
         if (isNaN(selectOptions[quesCounter])) 
         {
-            alert('Please select an option !');
+            alert('Proszę zaznaczyć odpowiedź!');
         } 
         else 
         {
