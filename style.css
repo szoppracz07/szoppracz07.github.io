@@ -243,26 +243,6 @@ header
 {
 	text-align: center;
 }
-
-@media screen and (max-width:1024px) {
-	header
-	{
-		height: 100vh;
-		width: 80vh;
-		background-size: 150vh;
-	}
-	
-  	.textinfo
-        {
-		color: black;
-		font-family: "Roboto", sans-serif;
-		height: 100vh;
-		width: 80vh;
-		text-position: center;
-		text-decoration: none;
-		text-align: center;
-         }
-}
  
  .hero
 {
