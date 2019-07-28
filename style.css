@@ -131,25 +131,6 @@ body
   background-color: #4CAF50;
 }
 
-@media screen and (max-width:959px) {
-	header
-	{
-		height: 100vh;
-		width: 80vh;
-		background-size: 150vh;
-	}
-	
-  	.textinfo
-        {
-		color: black;
-		font-family: "Roboto", sans-serif;
-		height: 100vh;
-		width: 80vh;
-		text-position: center;
-		text-decoration: none;
-		text-align: center;
-         }
-
 .hero
 {
     position: absolute;
@@ -174,7 +155,6 @@ header
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic1.jpg);
     height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
 }
 .button
@@ -262,6 +242,25 @@ header
 {
 	text-align: center;
 }
+
+@media screen and (max-width:959px) {
+	header
+	{
+		height: 100vh;
+		width: 80vh;
+		background-size: 150vh;
+	}
+	
+  	.textinfo
+        {
+		color: black;
+		font-family: "Roboto", sans-serif;
+		height: 100vh;
+		width: 80vh;
+		text-position: center;
+		text-decoration: none;
+		text-align: center;
+         }
  
  .hero
 {
@@ -301,7 +300,6 @@ header
   width: 75%;
   height: 75%;
 }
-
 
 
 
