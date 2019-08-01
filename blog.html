@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="eng">
 <head>
@@ -66,6 +67,12 @@ body {
 
 /* Add a card effect for articles */
 .card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.cardblog {
    background-color: white;
    padding: 20px;
    margin-top: 20px;
@@ -154,6 +161,23 @@ border: none;
     color: white;
 }
 
+.searchbox{
+  width: 50%;
+  margin: 10px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+#value{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 6px;
+  color: black;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -174,9 +198,10 @@ border: none;
 </div>
 
 <div class="row">
+<div class="searchbox"><input onkeyup="szukajnablog()" type="text" id="value" placeholder="Szukaj na blogu!"></div><br>
   <div class="leftcolumn">
-    <div class="card">
-      <h2>NOWA DOMENA!</h2>
+    <div class="cardblog">
+      <h2 class="pierw">NOWA DOMENA!</h2>
       <h5>Posiadamy nową domenę! :D, 31.07.2019</h5>
       <div class="fakeimg" style="height:200px;"><img src="https://i.imgur.com/LQRYcVw.jpg"></div>
       <p>Cześć..</p>
@@ -192,7 +217,6 @@ border: none;
     </div>
     <div class="card">
       <h3>Coś Tu Będzie</h3><br />
-      <div class="fakeimg">Coś Tu Będzie</div><br>
       <div class="fakeimg">Coś Tu Będzie</div><br>
       <div class="fakeimg">Coś Tu Będzie</div>
     </div>
@@ -226,6 +250,30 @@ border: none;
 	}(document, 'script', 'facebook-jssdk'));</script>
 		    
 		    <div class="fb-comments" data-href="https://szoppracz07pl.github.io" data-numposts="5"></div>
+
+
+
+<script type="text/javascript">
+  function szukajnablog() {
+
+    var value,name,cardblog,i;
+
+    value = document.getElementById("value").value.toUpperCase();
+    cardblog = document.getElementsByClassName("cardblog");
+
+    for(i=0;i<cardblog.length;i++){
+      name = cardblog[i].getElementsByClassName("pierw");
+      if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+        cardblog[i].style.display = "";
+      }else{
+        cardblog[i].style.display = "none";
+      }
+    }
+
+  }
+</script>
+
+
 
 <div class="footer">
   <h2>2019 © szoppracz07<br />Wygląd strony od <a href="https://www.w3schools.com/howto/howto_css_blog_layout.asp">w3schools</a></h2>
