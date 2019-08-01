@@ -203,6 +203,57 @@ border: none;
 </head> 
 <body>
 
+	    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '652463361923472',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+	  
+	  		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    		document.getElementById('status').innerHTML = 'Witaj ';
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = ''
+		    	} else {
+		    		document.getElementById('status').innerHTML = '';
+		    	}
+		    });
+  };
+		    
+		    		// login with facebook with extra permissions
+		function login() {
+			FB.login(function(response) {
+				if (response.status === 'connected') {
+		    		document.getElementById('status').innerHTML = 'Witaj ';
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = ''
+		    	} else {
+		    		document.getElementById('status').innerHTML = '';
+		    	}
+			}, {scope: 'email'});
+		}
+		
+		// getting basic user info
+		function getInfo() {
+			FB.api('/me', 'GET', {fields: 'first_name'}, function(response) {
+				document.getElementById('status').innerHTML = response.id;
+			});
+			
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script> 
+	
+	<ul>
+  <li><div id="status"></div></li>
+  <li><div id="siema"></div></li>
+  <li><button onclick="login()" id="login">Login</button></li>
+  <li><button onclick="getInfo()">Get Info</button></li>
+</ul>
+	
 <div class="header">
   <h2 class="mblog">Blog!</h2>
 </div>
