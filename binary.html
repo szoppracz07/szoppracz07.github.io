@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text to Binary Conventer</title>
+    <script>
+function convert() {
+  var output = document.getElementById("ti2");
+  var input = document.getElementById("ti1").value;
+  output.value = "";
+  for (var i = 0; i < input.length; i++) {
+      output.value += input[i].charCodeAt(0).toString(2) + " ";
+  }
+}
+    </script>
+</head>
+
+<body>
+<input id="ti1" value ="TEST"/>
+<input id="ti2"/>
+<button onClick="convert();">Convert!</button>
+</body>
+
+</html>  
