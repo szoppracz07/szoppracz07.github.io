@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
 body {
   background-color: #f1c40f;
   overflow: hidden;
@@ -21,45 +22,50 @@ h1 {
   margin-left: -50px;
   left: 50%;
   animation: speeder .4s linear infinite;
-}
-.body > span {
-  height: 5px;
-  width: 35px;
-  background: #000;
-  position: absolute;
-  top: -19px;
-  left: 60px;
-  border-radius: 2px 10px 1px 0;
+
+  > span {
+    height: 5px;
+    width: 35px;
+    background: #000;
+    position: absolute;
+    top: -19px;
+    left: 60px;
+    border-radius: 2px 10px 1px 0;
+  }
 }
 
-.base span {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-right: 100px solid #000;
-  border-bottom: 6px solid transparent;
-}
-.base span:before {
-  content: "";
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
-  background: #000;
-  position: absolute;
-  right: -110px;
-  top: -16px;
-}
-.base span:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 0 solid transparent;
-  border-right: 55px solid #000;
-  border-bottom: 16px solid transparent;
-  top: -16px;
-  right: -98px;
+.base {
+  span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 100px solid #000;
+    border-bottom: 6px solid transparent;
+
+    &:before {
+      content: "";
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      right: -110px;
+      top: -16px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 0 solid transparent;
+      border-right: 55px solid #000;
+      border-bottom: 16px solid transparent;
+      top: -16px;
+      right: -98px;
+    }
+  }
 }
 
 .face {
@@ -71,18 +77,19 @@ h1 {
   transform: rotate(-40deg);
   right: -125px;
   top: -15px;
-}
-.face:after {
-  content: "";
-  height: 12px;
-  width: 12px;
-  background: #000;
-  right: 4px;
-  top: 7px;
-  position: absolute;
-  transform: rotate(40deg);
-  transform-origin: 50% 50%;
-  border-radius: 0 0 0 2px;
+
+  &:after {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #000;
+    right: 4px;
+    top: 7px;
+    position: absolute;
+    transform: rotate(40deg);
+    transform-origin: 50% 50%;
+    border-radius: 0 0 0 2px;
+  }
 }
 
 .body > span > span:nth-child(1),
@@ -122,6 +129,7 @@ h1 {
     opacity: 0;
   }
 }
+
 @keyframes fazer2 {
   0% {
     left: 0;
@@ -131,6 +139,7 @@ h1 {
     opacity: 0;
   }
 }
+
 @keyframes fazer3 {
   0% {
     left: 0;
@@ -140,6 +149,7 @@ h1 {
     opacity: 0;
   }
 }
+
 @keyframes fazer4 {
   0% {
     left: 0;
@@ -149,6 +159,7 @@ h1 {
     opacity: 0;
   }
 }
+
 @keyframes speeder {
   0% {
     transform: translate(2px, 1px) rotate(0deg);
@@ -184,35 +195,41 @@ h1 {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
 .longfazers {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.longfazers span {
-  position: absolute;
-  height: 2px;
-  width: 20%;
-  background: #000;
-}
-.longfazers span:nth-child(1) {
-  top: 20%;
-  animation: lf .6s linear infinite;
-  animation-delay: -5s;
-}
-.longfazers span:nth-child(2) {
-  top: 40%;
-  animation: lf2 .8s linear infinite;
-  animation-delay: -1s;
-}
-.longfazers span:nth-child(3) {
-  top: 60%;
-  animation: lf3 .6s linear infinite;
-}
-.longfazers span:nth-child(4) {
-  top: 80%;
-  animation: lf4 .5s linear infinite;
-  animation-delay: -3s;
+
+  span {
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background: #000;
+
+    &:nth-child(1) {
+      top: 20%;
+      animation: lf .6s linear infinite;
+      animation-delay: -5s;
+    }
+
+    &:nth-child(2) {
+      top: 40%;
+      animation: lf2 .8s linear infinite;
+      animation-delay: -1s;
+    }
+
+    &:nth-child(3) {
+      top: 60%;
+      animation: lf3 .6s linear infinite;
+    }
+
+    &:nth-child(4) {
+      top: 80%;
+      animation: lf4 .5s linear infinite;
+      animation-delay: -3s;
+    }
+  }
 }
 
 @keyframes lf {
