@@ -4,7 +4,7 @@
 	<meta property="og:title" content="szoppracz07 API" />
 	<meta property="og:description" content="szoppracz07 API" />
 	<meta property="og:type" content="Website" />
-	<meta property="og:url" content="https://szoppracz07.github.io/api" />
+	<meta property="og:url" content="https://szoppracz07.github.io/api/test" />
 	<meta property="og:image" content="https://szoppracz07.github.io/bg.jpg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="favicon.png"
