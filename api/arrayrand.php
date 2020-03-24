@@ -8,7 +8,7 @@ $arr = array(
 $arr_rand = array_rand($arr);
 
 echo "<pre>";
-pring_r($arr_rand);
+print_r($arr_rand);
 echo "</pre>";
 
 ?>
